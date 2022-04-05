@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+</head>
+<body>
+    <!--<img width="200px" srcset="../images/r3 3x, ../images/r2 2x" src="../images/r1"alt="test">-->
+
+    <!--<img srcset="../images/r3 500w,
+    ../images/r2 300w, ../images/r1 150w" sizes="(min-width:960px) 500px, (min-width:640px) 300px,
+    900px" src="../images/r1" alt="rabbit">-->
+
+    <picture>
+        <source srcset="images/r3" media="(min-width:960px)">
+        <source srcset="images/peng.png" media="(min-width:640px)">
+        <img src="images/r1" alt="">
+    </picture>
+</body>
+</html>
