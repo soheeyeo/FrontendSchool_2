@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        .wrap {
+            border: 4px solid blue;
+        }
+
+        .wrap::after {
+            content: 'hello';
+            display: block;
+            clear: both
+        }
+
+        .content {
+            /* 부모가 자식 요소를 인식하지 못한다 */
+            /* clear 속성은 float을 해제. clear 줬기 때문에 첫 번째 형제 요소를 알아봐서 부모도 알아보게 됨 */
+            float: left;
+            /* clear: left; */
+            margin: 5px;
+            height: 20px;
+            border: 2px solid green;
+        }
+
+        /* 두 번째 요소가 형제 요소를 인식하지 못한다 */
+        /* 두번째 자식 요소가 첫 번째 자식 요소를 침범 */
+        /* .content2 { */
+            float: left;
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="content content2">내용1</div>
+        <div class="content">내용2</div>
+    </div>
+</body>
+
+</html>
