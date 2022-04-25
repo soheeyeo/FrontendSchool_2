@@ -1,0 +1,17 @@
+$sohee1 : #000;
+$sohee2 : #f00;
+$소희 : #00f;
+$큰글자: 32px;
+
+.one {
+    font-size: $큰글자;
+    color: $sohee1;
+}
+
+.two {
+    color: $sohee2;
+}
+
+.three {
+    color: $소희;
+}
