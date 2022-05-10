@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        // 1. `[10, 20, 30, 40]` 값의 평균을 구하는 **함수**를 만들어주세요.
+
+        let arr = [10, 20, 30, 40]
+
+        function average(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i];
+            }
+            return sum / arr.length;
+        }
+        undefined
+        average(arr)
+
+        // 2. (나아가기) 숫자단위 콤마를 찍는 함수를 만들어주세요.
+
+        // 3. 화살표 함수로 되어 있는 것을 일반 함수로 바꿔주세요.
+        /*let data = [{
+            반: 1,
+            번: 1,
+            이름: "호준",
+            중간고사점수: 55
+        }, {
+            반: 1,
+            번: 2,
+            이름: "길동",
+            중간고사점수: 60
+        }, {
+            반: 1,
+            번: 3,
+            이름: "영희",
+            중간고사점수: 30
+        }, {
+            반: 1,
+            번: 4,
+            이름: "철수",
+            중간고사점수: 20
+        }, {
+            반: 1,
+            번: 5,
+            이름: "규리",
+            중간고사점수: 100
+        }]*/
+
+        // 1) console.log(data.map(x => x.중간고사점수))
+
+        data.map(function (x) {
+            return x.중간고사점수
+        })
+
+        // 2) data.map(x => [x.이름,x.중간고사점수])
+
+        data.map(function (x) {
+            return [x.이름, x.중간고사점수]
+        })
+
+        /* 3) let data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        let newData = data.map(a => a.map(n => n * 2));*/
+        let newData = data.map(function (a) {
+            return a.map(function (n) {
+                return n * 2
+            })
+        })
+    </script>
+</body>
+
+</html>
