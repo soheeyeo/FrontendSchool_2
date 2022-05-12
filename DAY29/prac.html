@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box.pink {
+            background-color: rgb(250, 217, 223);
+        }
+
+        .box.violet {
+            background-color: rgb(231, 133, 231);
+        }
+
+        .box.purple {
+            background-color: rgb(145, 56, 145);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <ul>
+        <button class="one">click</button>
+        <button class="two">click</button>
+        <button class="three">click</button>
+    </ul>
+</body>
+
+<script>
+    const box = document.querySelector(".box")
+    const myBtn = document.querySelector(".one");
+    const myBtn2 = document.querySelector(".two");
+    const myBtn3 = document.querySelector(".three");
+
+
+    myBtn.addEventListener('click', function () {
+                myBtn.classList.toggle("pink");
+            }
+
+            myBtn.addEventListener('click', function () {
+                    myBtn.classList.toggle("violet");
+                }
+
+                myBtn.addEventListener('click', function () {
+                        myBtn.classList.toggle("purple");
+                    }
+</script>
+
+</html>
