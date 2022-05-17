@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Factory() {}
+        //     const item = new Factory();
+
+        // function NewFactory(name) {
+        //     this.name = name;
+        //     this.sayYourName = function () {
+        //         console.log(`삐리비리비리 제 이름은 ${this.name}입니다.`);
+        //     }
+        // }
+
+        // const robot1 = new NewFactory('재현');
+
+        const dessertMenu = ['초콜렛', '마카롱', '마들렌', '휘낭시에', '다쿠아즈', '브라우니', '케이크', '쿠키']
+        
+        function FoodBot(Dessert) {
+            this.name = Dessert;
+            this.chooseDessert = function() {
+                console.log(this.name[Math.floor(Math.random() * dessertMenu.length)]);
+            }
+        }
+
+        const foodBotMark1 = new FoodBot(dessertMenu);
+    </script>
+</body>
+
+</html>

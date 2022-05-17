@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function NewFactory2(name){
+        //     this.name = name
+        // }
+
+        // NewFactory2.prototype.sayYourName = function(){
+        //     console.log(`삐리비리. 제 이름은 ${this.name}입니다. 주인님.`);
+        // }
+
+       
+        // const dessertMenu = ['초콜렛', '마카롱', '마들렌', '휘낭시에', '다쿠아즈', '브라우니', '케이크', '쿠키']
+        
+        // function FoodBot(Dessert) {
+        //     this.name = Dessert;
+        // }
+
+        // FoodBot.prototype.chooseDessert = function () {
+        //     console.log(this.name[Math.floor(Math.random() * dessertMenu.length)]);
+        // }
+
+        // const foodBotMark1 = new FoodBot(dessertMenu);
+
+
+        const me = {
+            name: '여소희',
+            address: '서울시 강남구 삼성로',
+            phoneNum: '010-9770-9347',
+            eatChoc: function () {
+                console.log('소희가 초콜렛을 먹는다.');
+            },
+            haveChoc: function (chocolate) {
+                chocolate.numberUp();
+            }
+        }
+
+        function Me(name, address, phoneNum) {
+            this.name = name;
+            this.address = address;
+            this.phoneNum = phoneNum;
+        }
+
+        Me.prototype.eatChoc = function () {
+            console.log('소희가 초콜렛을 먹는다.');
+        }
+
+        Me.prototype.haveChoc = function (chocolate) {
+                chocolate.numberUp();
+            }
+
+            function Chocolate(level) {
+                this.number = number;
+            }
+
+            Student.prototype.numberUp = function() {
+                this.number++;
+            }
+    </script> 
+</body>
+</html>
