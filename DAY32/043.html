@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const me = {
+        //     name: '여소희',
+        //     address: '서울시 강남구 삼성로',
+        //     phoneNum: '010-9770-9347',
+        //     eatChoc: function () {
+        //         console.log('소희가 초콜렛을 먹는다.');
+        //     },
+        //     haveChoc: function (chocolate) {
+        //         chocolate.numberUp();
+        //     }
+        // }
+
+        // const chocolate = {
+        //     number: 1,
+        //     numberUp: function () {
+        //         this.number++;
+        //     }
+        // }
+
+        class Me {
+            constructor(name, address, phoneNum) {
+                this.name = name;
+                this.address = address;
+                this.phoneNum = phoneNum;
+            }
+
+            eatChoc = function () {
+                console.log('소희가 초콜렛을 먹는다.');
+            }
+
+            haveChoc = function (chocolate) {
+                chocolate.numberUp();
+            }
+        }
+
+        class chocolate {
+            constructor(number) {
+                this.number = number;
+            }
+            numberUp = function () {
+                this.number++
+            }
+        }
+
+        const me = new Me('소희', '010-9770-9347', '서울');
+        const chocolate = new Chocolate(1);
+    </script>
+</body>
+</html>
